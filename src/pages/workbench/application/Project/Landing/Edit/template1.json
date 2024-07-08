@@ -1,0 +1,671 @@
+{
+  "version": "1.0.0",
+  "componentsMap": [
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Image",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Image"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "RichText",
+      "main": "",
+      "destructuring": true,
+      "componentName": "RichText"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Col",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Col"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Row",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Row"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Button",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Button"
+    },
+    {
+      "devMode": "lowCode",
+      "componentName": "Page"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Form",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Form"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Icon",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Icon"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Template",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Template"
+    }
+  ],
+  "componentsTree": [
+    {
+      "componentName": "Page",
+      "id": "node_dockcviv8fo1",
+      "props": {
+        "ref": "outerView",
+        "style": {
+          "height": "100%"
+        }
+      },
+      "css": "body {\n  font-size: 12px;\n}\n\n.button {\n  width: 100px;\n  color: #ff00ff\n}",
+      "state": {
+        "text": {
+          "type": "JSExpression",
+          "value": "\"outer\""
+        },
+        "isShowDialog": {
+          "type": "JSExpression",
+          "value": "false"
+        }
+      },
+      "title": "",
+      "hidden": false,
+      "methods": {
+        "onClick": {
+          "type": "JSFunction",
+          "value": "function onClick() {\n  this.setState({\n    isShowDialog: true\n  });\n}"
+        },
+        "testFunc": {
+          "type": "JSFunction",
+          "value": "function testFunc() {\n  console.log('test func');\n}"
+        },
+        "closeDialog": {
+          "type": "JSFunction",
+          "value": "function closeDialog() {\n  this.setState({\n    isShowDialog: false\n  });\n}"
+        }
+      },
+      "fileName": "/",
+      "isLocked": false,
+      "condition": true,
+      "lifeCycles": {
+        "componentDidMount": {
+          "type": "JSFunction",
+          "value": "function componentDidMount() {\n  console.log('did mount');\n}"
+        },
+        "componentWillUnmount": {
+          "type": "JSFunction",
+          "value": "function componentWillUnmount() {\n  console.log('will unmount');\n}"
+        }
+      },
+      "originCode": "class LowcodeComponent extends Component {\n  state = {\n    \"text\": \"outer\",\n    \"isShowDialog\": false\n  }\n  componentDidMount() {\n    console.log('did mount');\n  }\n  componentWillUnmount() {\n    console.log('will unmount');\n  }\n  testFunc() {\n    console.log('test func');\n  }\n  onClick() {\n    this.setState({\n      isShowDialog: true\n    })\n  }\n  closeDialog() {\n    this.setState({\n      isShowDialog: false\n    })\n  }\n}",
+      "conditionGroup": "",
+      "children": [
+        {
+          "componentName": "Image",
+          "id": "node_ocl6nf60281",
+          "props": {
+            "src": "https://lookstar-landing.oss-cn-beijing.aliyuncs.com/uploads/tenant/landing/202202/rc-upload-1645671333028-2.png",
+            "style": {
+              "display": "flex",
+              "paddingTop": "14px",
+              "paddingBottom": "14px",
+              "justifyContent": "center"
+            },
+            "width": 70,
+            "height": 70
+          },
+          "title": "",
+          "hidden": false,
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": ""
+        },
+        {
+          "componentName": "Row",
+          "id": "node_ocl6nf60282",
+          "props": {
+            "wrap": true,
+            "align": "top",
+            "justify": "start"
+          },
+          "title": "",
+          "hidden": false,
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": "",
+          "children": [
+            {
+              "componentName": "Col",
+              "id": "node_ocl6nf60284",
+              "props": {
+                "span": 24,
+                "order": 0,
+                "style": {
+                  "color": "#ffffff",
+                  "paddingTop": "132px",
+                  "paddingLeft": "15px",
+                  "paddingRight": "15px",
+                  "paddingBottom": "204px",
+                  "backgroundImage": "url(https://lookstar.oss-cn-beijing.aliyuncs.com/tenant/uploads/20220812/62f5e7e89d4e1.jpg)"
+                }
+              },
+              "title": "",
+              "hidden": false,
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Row",
+                  "id": "node_ocl77l6bc13",
+                  "props": {
+                    "wrap": true,
+                    "align": "top",
+                    "justify": "start"
+                  },
+                  "title": "",
+                  "hidden": false,
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": "",
+                  "children": [
+                    {
+                      "componentName": "Col",
+                      "id": "node_ocl77l6bc15",
+                      "props": {
+                        "span": 24,
+                        "order": 0
+                      },
+                      "title": "",
+                      "hidden": false,
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": "",
+                      "children": [
+                        {
+                          "componentName": "RichText",
+                          "id": "node_ocl77l6bc1b",
+                          "props": {
+                            "richtext": "<p style=\"line-height: 1;\"><span style=\"font-size: 32px;\">免费资料</span></p><p style=\"line-height: 1;\"><br></p><p style=\"line-height: 1;\"><br></p><p style=\"line-height: 1.15;\"><span style=\"font-size: 48px;\"><strong>请输入您的</strong></span></p><p style=\"line-height: 1.15;\"><span style=\"font-size: 48px;\"><strong>资料名称</strong></span></p><p style=\"line-height: 1.15;\"><br></p><p style=\"line-height: 1;\"><span style=\"font-size: 32px;\">请输入您的资料详情</span></p><p style=\"line-height: 1;\"><br></p><p style=\"line-height: 1;\"><br></p><p style=\"line-height: 1;\"><br></p>"
+                          },
+                          "title": "",
+                          "hidden": false,
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "componentName": "Button",
+                  "id": "node_ocl77l6bc1d",
+                  "props": {
+                    "text": "前往下载",
+                    "attribute": {
+                      "type": "anchorPoint",
+                      "value": "form"
+                    }
+                  },
+                  "title": "",
+                  "hidden": false,
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentName": "Form",
+          "id": "node_ocl7rh98ix1",
+          "props": {
+            "debugModal": false,
+            "list": [
+              {
+                "editIndex": 0,
+                "form_type": "text",
+                "label": "手机号",
+                "name": "phone",
+                "options": "",
+                "placeholder": "",
+                "required": 1,
+                "rule_name": "regexp_ch_code_phone",
+                "show": 1,
+                "type": "system",
+                "contacts_field_name": "phone",
+                "prohibitdelete": 1,
+                "prohibitrequired": 1,
+                "prohibithide": 1
+              }
+            ],
+            "submitText": "提交",
+            "submitColor": "#6dd6ea",
+            "modalText": "提交成功",
+            "privacyPolicy": [],
+            "modalConfig": {
+              "type": "none",
+              "jumpTime": 0,
+              "fileUrl": "",
+              "value": ""
+            },
+            "anchorPoint": ""
+          },
+          "hidden": false,
+          "title": "",
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": "",
+          "children": [
+            {
+              "componentName": "Row",
+              "id": "node_ocl7rh98ix2",
+              "props": {
+                "wrap": true,
+                "align": "top",
+                "justify": "start"
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Col",
+                  "id": "node_ocl7rh98ix3",
+                  "props": {
+                    "span": 24,
+                    "order": 0
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": "",
+                  "children": [
+                    {
+                      "componentName": "RichText",
+                      "id": "node_ocl7rh98ix4",
+                      "props": {
+                        "richtext": "<p style=\"text-align: center; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 24px;\"><strong>现在注册</strong></span></p>"
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentName": "Template",
+          "id": "node_ocl7rh98ix5",
+          "props": {
+            "redundancyKey": ""
+          },
+          "hidden": false,
+          "title": "",
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": "",
+          "children": [
+            {
+              "componentName": "Row",
+              "id": "node_ocl7rh98ix6",
+              "props": {
+                "warp": true
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Col",
+                  "id": "node_ocl7rh98ix7",
+                  "props": {
+                    "span": 24,
+                    "order": 0,
+                    "style": {
+                      "paddingLeft": "28px",
+                      "paddingRight": "28px",
+                      "paddingTop": "66px",
+                      "paddingBottom": "50px"
+                    }
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": "",
+                  "children": [
+                    {
+                      "componentName": "RichText",
+                      "id": "node_ocl7rh98ix8",
+                      "props": {
+                        "richtext": "<p style=\"line-height: 1;\"><span style=\"font-size: 32px;\"><strong>请输入资料概览</strong></span></p>"
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": ""
+                    },
+                    {
+                      "componentName": "Row",
+                      "id": "node_ocl7rh98ix9",
+                      "props": {
+                        "align": "top",
+                        "justify": "start",
+                        "wrap": false,
+                        "style": {
+                          "marginTop": "24px"
+                        }
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": "",
+                      "children": [
+                        {
+                          "componentName": "Col",
+                          "id": "node_ocl7rh98ixa",
+                          "props": {
+                            "span": 3,
+                            "order": 0,
+                            "style": {
+                              "paddingTop": "2px"
+                            }
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": "",
+                          "children": [
+                            {
+                              "componentName": "Icon",
+                              "id": "node_ocl7rh98ixb",
+                              "props": {
+                                "type": "CheckCircleOutlined",
+                                "size": 20,
+                                "rotate": 0,
+                                "spin": false
+                              },
+                              "hidden": false,
+                              "title": "",
+                              "isLocked": false,
+                              "condition": true,
+                              "conditionGroup": ""
+                            }
+                          ]
+                        },
+                        {
+                          "componentName": "Col",
+                          "id": "node_ocl7rh98ixc",
+                          "props": {
+                            "span": 21,
+                            "order": 0
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": "",
+                          "children": [
+                            {
+                              "componentName": "RichText",
+                              "id": "node_ocl7rh98ixd",
+                              "props": {
+                                "richtext": "<p style=\"line-height: 1.5;\"><span style=\"font-size: 16px;\">资料第一部分资料第一部分资料第一部分资料第一部分</span></p>"
+                              },
+                              "hidden": false,
+                              "title": "",
+                              "isLocked": false,
+                              "condition": true,
+                              "conditionGroup": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentName": "Row",
+                      "id": "node_ocl7rh98ixe",
+                      "props": {
+                        "align": "top",
+                        "justify": "start",
+                        "wrap": false,
+                        "style": {
+                          "marginTop": "24px"
+                        }
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": "",
+                      "children": [
+                        {
+                          "componentName": "Col",
+                          "id": "node_ocl7rh98ixf",
+                          "props": {
+                            "span": 3,
+                            "order": 0,
+                            "style": {
+                              "paddingTop": "2px"
+                            }
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": "",
+                          "children": [
+                            {
+                              "componentName": "Icon",
+                              "id": "node_ocl7rh98ixg",
+                              "props": {
+                                "type": "CheckCircleOutlined",
+                                "size": 20,
+                                "rotate": 0,
+                                "spin": false
+                              },
+                              "hidden": false,
+                              "title": "",
+                              "isLocked": false,
+                              "condition": true,
+                              "conditionGroup": ""
+                            }
+                          ]
+                        },
+                        {
+                          "componentName": "Col",
+                          "id": "node_ocl7rh98ixh",
+                          "props": {
+                            "span": 21,
+                            "order": 0
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": "",
+                          "children": [
+                            {
+                              "componentName": "RichText",
+                              "id": "node_ocl7rh98ixi",
+                              "props": {
+                                "richtext": "<p style=\"line-height: 1.5;\"><span style=\"font-size: 16px;\">资料第二部分资料第二部分资料第二部分资料第二部分</span></p>"
+                              },
+                              "hidden": false,
+                              "title": "",
+                              "isLocked": false,
+                              "condition": true,
+                              "conditionGroup": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentName": "Row",
+                      "id": "node_ocl7rh98ixj",
+                      "props": {
+                        "align": "top",
+                        "justify": "start",
+                        "wrap": false,
+                        "style": {
+                          "marginTop": "24px"
+                        }
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": "",
+                      "children": [
+                        {
+                          "componentName": "Col",
+                          "id": "node_ocl7rh98ixk",
+                          "props": {
+                            "span": 3,
+                            "order": 0,
+                            "style": {
+                              "paddingTop": "2px"
+                            }
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": "",
+                          "children": [
+                            {
+                              "componentName": "Icon",
+                              "id": "node_ocl7rh98ixl",
+                              "props": {
+                                "type": "CheckCircleOutlined",
+                                "size": 20,
+                                "rotate": 0,
+                                "spin": false
+                              },
+                              "hidden": false,
+                              "title": "",
+                              "isLocked": false,
+                              "condition": true,
+                              "conditionGroup": ""
+                            }
+                          ]
+                        },
+                        {
+                          "componentName": "Col",
+                          "id": "node_ocl7rh98ixm",
+                          "props": {
+                            "span": 21,
+                            "order": 0
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": "",
+                          "children": [
+                            {
+                              "componentName": "RichText",
+                              "id": "node_ocl7rh98ixn",
+                              "props": {
+                                "richtext": "<p style=\"line-height: 1.5;\"><span style=\"font-size: 16px;\">资料第三部分资料第三部分资料第三部分资料第三部分</span></p>"
+                              },
+                              "hidden": false,
+                              "title": "",
+                              "isLocked": false,
+                              "condition": true,
+                              "conditionGroup": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "componentName": "Button",
+                      "id": "node_ocl7rh98ixo",
+                      "props": {
+                        "type": "primary",
+                        "children": "主按钮",
+                        "text": "前往下载",
+                        "style": {
+                          "marginTop": "34px",
+                          "height": "40px",
+                          "fontSize": "15px"
+                        },
+                        "attribute": {
+                          "type": "anchorPoint",
+                          "value": "form"
+                        }
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentName": "Image",
+          "id": "node_ocl6nhiqll1",
+          "props": {
+            "src": "https://lookstar.oss-cn-beijing.aliyuncs.com/tenant/uploads/20220812/62f5e82c50df4.jpg",
+            "width": "100%",
+            "height": "226px"
+          },
+          "title": "",
+          "hidden": false,
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": ""
+        }
+      ]
+    }
+  ],
+  "i18n": {
+    "redundancyKey": ""
+  }
+}

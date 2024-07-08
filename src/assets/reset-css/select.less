@@ -1,0 +1,53 @@
+.reset-select-scroll-x {
+  &.ant-select-focused {
+    .ant-select-selector {
+      color: #0bc7ff;
+    }
+  }
+  .ant-select-selector {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '点此选择项目';
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 100;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      visibility: visible;
+      text-align: center;
+      font-size: 12px;
+      line-height: 26px;
+      cursor: pointer;
+    }
+  }
+
+  .ant-select-selection-overflow {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .ant-select-selection-overflow-item {
+    display: none;
+
+    &:last-of-type {
+      display: block;
+    }
+  }
+
+  &:hover {
+    .ant-select-selector {
+      color: #0bc7ff;
+    }
+  }
+}
+
+.reset-select-height30 {
+  .ant-select-selector input {
+    height: 28px;
+  }
+}

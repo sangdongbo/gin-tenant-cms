@@ -1,0 +1,28 @@
+.card {
+  &:last-child {
+    .card-divider {
+      display: none;
+    }
+  }
+}
+
+.more-timeline {
+  :global {
+    .ant-timeline-item-label {
+      width: 160px !important;
+    }
+
+    .ant-timeline-item-content {
+      width: calc(100% - 180px) !important;
+    }
+
+    .ant-timeline-item-tail,
+    .ant-timeline-item-head {
+      left: 174px !important;
+    }
+
+    .ant-timeline-item-content {
+      left: 164px !important;
+    }
+  }
+}

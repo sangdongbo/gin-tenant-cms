@@ -1,0 +1,28 @@
+.qrcode {
+  position: relative;
+  width: 54px;
+  height: 54px;
+
+  &:hover {
+    .qrcodeBox {
+      opacity: 1;
+    }
+  }
+}
+
+.qrcodeBox {
+  position: absolute;
+  z-index: 9;
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}

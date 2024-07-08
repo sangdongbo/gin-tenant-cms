@@ -1,0 +1,24 @@
+.media-card {
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  border-radius: @card-radius;
+  border: 1px solid #d8dbde;
+  margin-bottom: 24px;
+
+  &:hover {
+    .button-group {
+      display: block;
+    }
+  }
+}
+
+.button-group {
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 90;
+  // top: 50%;
+  // transform: translateY(-50%);
+}

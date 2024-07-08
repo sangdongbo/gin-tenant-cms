@@ -1,0 +1,11 @@
+ingress:
+  enabled: true
+  hosts:
+    - host: app.lookstar.com.cn
+      paths:
+        - path: /tenant
+          pathType: ImplementationSpecific
+  tls:
+    - secretName: lookstar.com.cn
+      hosts:
+        - lookstar.com.cn

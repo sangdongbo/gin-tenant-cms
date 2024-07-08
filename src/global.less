@@ -1,0 +1,124 @@
+// @import '~@bluedot-tech/bluedot-antd/dist/index.less';
+@import './assets/reset-css/index.less';
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: @background-color;
+}
+
+a {
+  color: @primary-color;
+
+  &:hover {
+    color: @primary-color;
+  }
+}
+
+.btn-disabled {
+  cursor: not-allowed !important;
+  color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.color-primary {
+  color: @colorPrimary;
+}
+
+// 解决ProLayout返回抖动问题
+.ant-pro-fixed-header-action {
+  transition: none !important;
+}
+
+// 隐藏proCard的tabs-top高度
+.hidden-tabs-top {
+  .ant-pro-card-tabs .ant-tabs-top > .ant-tabs-nav .ant-tabs-nav-list {
+    margin-top: 0;
+  }
+}
+
+.ant-pro-sider-actions {
+  display: none !important;
+}
+
+.menu-transition {
+  white-space: nowrap;
+  transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), margin 0.3s, color 0.3s;
+}
+
+.clear::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-pro-card-checked::after {
+  display: none;
+}
+
+.card-border-hover:hover {
+  border: 1px solid @primary-color !important;
+  border-radius: @card-radius;
+  box-shadow: none !important;
+
+  // overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Compatible with IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+tr.drop-over-downward td {
+  border-bottom: 2px dashed #1890ff;
+}
+
+tr.drop-over-upward td {
+  border-top: 2px dashed #1890ff;
+}
+
+.spin507 {
+  min-height: 507px;
+}

@@ -1,0 +1,53 @@
+.loginContainer {
+  width: 100%;
+  height: 100vh;
+}
+
+.loginRightContainer {
+  min-width: 340px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.loginRightHeader {
+  margin-bottom: 50px;
+}
+
+.loginRightTitle {
+  color: #31a8bf;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1;
+}
+
+.loginRightLogo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.loginContainerBg {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://lookstar.oss-cn-beijing.aliyuncs.com/tenant/static/img/login-bg.png');
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.loginRightForm {
+  :global {
+    .@{ant-prefix}-tabs-nav::before {
+      border-bottom: none;
+    }
+    .@{ant-prefix}-tabs-nav-list {
+      width: 100%;
+      margin: auto;
+      font-size: 16px;
+    }
+
+    .@{ant-prefix}-tabs-tab {
+      flex: 1;
+      justify-content: center;
+    }
+  }
+}

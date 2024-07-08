@@ -1,0 +1,19 @@
+// 重置按钮text的hover样式
+.reset-text-hover {
+  &.ant-btn-text:hover {
+    color: @main-color-2;
+    background: transparent;
+
+    .anticon {
+      color: @main-color-2 !important;
+    }
+  }
+
+  &.ant-btn-text:focus {
+    background: transparent;
+  }
+
+  .anticon {
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}

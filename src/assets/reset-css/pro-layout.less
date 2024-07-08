@@ -1,0 +1,124 @@
+// 重置logo样式
+.ant-pro-sider-logo {
+  padding: 0 !important;
+  border: none !important;
+}
+
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+.ant-pro-layout-container {
+  min-height: 100vh !important;
+  background-color: @background-color!important;
+}
+
+.ant-layout-footer {
+  background-color: @background-color!important;
+}
+
+// 重置顶部导航栏样式
+.ant-pro-global-header {
+  height: 60px;
+  margin-inline: 0;
+  padding: 0 0 0 40px;
+}
+.ant-pro-layout-header {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.ant-layout-sider-children {
+  padding: 0 !important;
+}
+.ant-pro-sider {
+  background-color: #fff !important;
+}
+
+.reset-extra {
+  .ant-menu-item-group:first-child {
+    .ant-menu-item-group-title {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+.reset-pro-layout-menu {
+  .ant-menu-item:not(.ant-menu-item-selected):hover {
+    background-color: transparent !important;
+  }
+
+  .ant-menu-item-divider {
+    display: none;
+  }
+
+  .ant-menu-item-group-title {
+    margin: 18px 0 6px;
+    padding-left: 50px !important;
+    color: @font-color-2!important;
+    font-size: 14px !important;
+    line-height: 28px !important;
+    border-bottom: 1px solid @border-color;
+
+    .ant-pro-base-menu-inline-item-text {
+      margin-left: 5px !important;
+    }
+  }
+
+  .ant-menu-item {
+    .ant-menu-title-content {
+      width: 132px;
+      height: 30px;
+      font-size: 14px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: @border-radius-base;
+
+      .ant-pro-base-menu-inline-item-title {
+        justify-content: center;
+      }
+
+      a {
+        color: @font-color-2;
+      }
+    }
+  }
+
+  .ant-menu-item .ant-menu-title-content:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+
+  .ant-menu-item-selected {
+    background-color: transparent;
+
+    .ant-menu-title-content {
+      color: #fff;
+      background-image: linear-gradient(to right, @main-color-2, @main-color);
+      transition: none !important;
+
+      a {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+.event-layout {
+  .ant-pro-top-nav-header-main {
+    background-color: #fff;
+  }
+
+  .ant-pro-top-nav-header-logo > *:first-child {
+    padding: 0;
+    font-size: 20px;
+
+    & > img {
+      width: 40px !important;
+      height: 40px !important;
+    }
+
+    span {
+      padding-right: 24px;
+    }
+  }
+}

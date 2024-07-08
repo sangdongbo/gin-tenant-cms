@@ -1,0 +1,90 @@
+.user-info {
+  &-avatar {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-nickname {
+    padding-top: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &-tag {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+
+    &-same {
+      height: 16px;
+      padding: 0 7px;
+      font-size: 12px;
+      line-height: 16px;
+      background-color: @background-color-2;
+      border-radius: 9px;
+    }
+  }
+}
+
+.notice-same {
+  padding-top: 9px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid @border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &-version {
+    color: @main-color-2;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &-time {
+    color: @font-color;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  &-details {
+    padding-top: 6px;
+    color: @font-color;
+    font-size: 12px;
+    line-height: 1.5;
+
+    span {
+      color: @font-color-2;
+    }
+  }
+}
+
+.quickly-create {
+  &-project {
+    height: 148px;
+    padding: 15px 0 0 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 100%;
+    border-radius: @card-radius;
+    cursor: pointer;
+
+    &:hover {
+      animation: quickly-create-animation 0.3s linear forwards;
+    }
+  }
+}
+
+@keyframes quickly-create-animation {
+  0% {
+    background-size: auto 100%;
+  }
+  100% {
+    background-size: auto 110%;
+  }
+}

@@ -1,0 +1,845 @@
+{
+  "version": "1.0.0",
+  "componentsMap": [
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Image",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Image"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "RichText",
+      "main": "",
+      "destructuring": true,
+      "componentName": "RichText"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Col",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Col"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Row",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Row"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Button",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Button"
+    },
+    {
+      "devMode": "lowCode",
+      "componentName": "Page"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Form",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Form"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Icon",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Icon"
+    },
+    {
+      "package": "@bluedot-tech/lowcode-materials",
+      "version": "0.3.12",
+      "exportName": "Template",
+      "main": "",
+      "destructuring": true,
+      "componentName": "Template"
+    }
+  ],
+  "componentsTree": [
+    {
+      "componentName": "Page",
+      "id": "node_dockcviv8fo1",
+      "props": {
+        "ref": "outerView",
+        "style": {
+          "height": "100%"
+        }
+      },
+      "css": "body {\n  font-size: 12px;\n}\n\n.button {\n  width: 100px;\n  color: #ff00ff\n}",
+      "state": {
+        "text": {
+          "type": "JSExpression",
+          "value": "\"outer\""
+        },
+        "isShowDialog": {
+          "type": "JSExpression",
+          "value": "false"
+        }
+      },
+      "title": "",
+      "hidden": false,
+      "methods": {
+        "onClick": {
+          "type": "JSFunction",
+          "value": "function onClick() {\n  this.setState({\n    isShowDialog: true\n  });\n}"
+        },
+        "testFunc": {
+          "type": "JSFunction",
+          "value": "function testFunc() {\n  console.log('test func');\n}"
+        },
+        "closeDialog": {
+          "type": "JSFunction",
+          "value": "function closeDialog() {\n  this.setState({\n    isShowDialog: false\n  });\n}"
+        }
+      },
+      "fileName": "/",
+      "isLocked": false,
+      "condition": true,
+      "lifeCycles": {
+        "componentDidMount": {
+          "type": "JSFunction",
+          "value": "function componentDidMount() {\n  console.log('did mount');\n}"
+        },
+        "componentWillUnmount": {
+          "type": "JSFunction",
+          "value": "function componentWillUnmount() {\n  console.log('will unmount');\n}"
+        }
+      },
+      "originCode": "class LowcodeComponent extends Component {\n  state = {\n    \"text\": \"outer\",\n    \"isShowDialog\": false\n  }\n  componentDidMount() {\n    console.log('did mount');\n  }\n  componentWillUnmount() {\n    console.log('will unmount');\n  }\n  testFunc() {\n    console.log('test func');\n  }\n  onClick() {\n    this.setState({\n      isShowDialog: true\n    })\n  }\n  closeDialog() {\n    this.setState({\n      isShowDialog: false\n    })\n  }\n}",
+      "conditionGroup": "",
+      "children": [
+        {
+          "componentName": "Image",
+          "id": "node_ocl6nf60281",
+          "props": {
+            "src": "https://lookstar-landing.oss-cn-beijing.aliyuncs.com/uploads/tenant/landing/202202/rc-upload-1645671333028-2.png",
+            "style": {
+              "display": "flex",
+              "paddingTop": "14px",
+              "paddingBottom": "14px",
+              "justifyContent": "center"
+            },
+            "width": 70,
+            "height": 70
+          },
+          "title": "",
+          "hidden": false,
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": ""
+        },
+        {
+          "componentName": "Row",
+          "id": "node_ocl6zxijv21",
+          "props": {
+            "wrap": false,
+            "align": "top",
+            "style": {
+              "display": "flex",
+              "alignItems": "center",
+              "paddingTop": "60px",
+              "paddingLeft": "20px",
+              "paddingRight": "20px",
+              "paddingBottom": "80px",
+              "justifyContent": "center",
+              "backgroundImage": "url(https://lookstar-landing.oss-cn-beijing.aliyuncs.com/uploads/tenant/landing/202205/eidt-image-upload-1653376893488.png)"
+            },
+            "justify": "start"
+          },
+          "title": "",
+          "hidden": false,
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": "",
+          "children": [
+            {
+              "componentName": "Col",
+              "id": "node_ocl6zxijv22",
+              "props": {
+                "span": 24,
+                "order": 0,
+                "style": {
+                  "color": "#ffffff"
+                }
+              },
+              "title": "",
+              "hidden": false,
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "RichText",
+                  "id": "node_ocl77lnn783",
+                  "props": {
+                    "richtext": "<p style=\"line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 22px;\">点击报名参加活动</span></p><p style=\"line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 48px;\"><strong>请您输入活动名称</strong></span></p><p style=\"line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 32px;\"><strong>请您输入活动日期<br>请您输入活动时间</strong></span></p>"
+                  },
+                  "title": "",
+                  "hidden": false,
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                },
+                {
+                  "componentName": "Form",
+                  "id": "node_ocl7ri3jfa9d",
+                  "props": {
+                    "debugModal": false,
+                    "list": [
+                      {
+                        "editIndex": 0,
+                        "form_type": "text",
+                        "label": "手机号",
+                        "name": "phone",
+                        "options": "",
+                        "placeholder": "",
+                        "required": 1,
+                        "rule_name": "regexp_ch_code_phone",
+                        "show": 1,
+                        "type": "system",
+                        "contacts_field_name": "phone",
+                        "prohibitdelete": 1,
+                        "prohibitrequired": 1,
+                        "prohibithide": 1
+                      }
+                    ],
+                    "submitText": "提交",
+                    "submitColor": "#6dd6ea",
+                    "modalText": "提交成功",
+                    "privacyPolicy": [],
+                    "modalConfig": {
+                      "type": "none",
+                      "jumpTime": 0,
+                      "fileUrl": "",
+                      "value": ""
+                    },
+                    "anchorPoint": "",
+                    "style": {
+                      "marginTop": "74px"
+                    }
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": "",
+                  "children": [
+                    {
+                      "componentName": "Row",
+                      "id": "node_ocl7ri3jfa9e",
+                      "props": {
+                        "wrap": true,
+                        "align": "top",
+                        "justify": "start"
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": "",
+                      "children": [
+                        {
+                          "componentName": "Col",
+                          "id": "node_ocl7ri3jfa9f",
+                          "props": {
+                            "span": 24,
+                            "order": 0
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": "",
+                          "children": [
+                            {
+                              "componentName": "RichText",
+                              "id": "node_ocl7ri3jfa9g",
+                              "props": {
+                                "richtext": "<p style=\"text-align: center; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 24px;\"><strong>现在注册</strong></span></p>"
+                              },
+                              "hidden": false,
+                              "title": "",
+                              "isLocked": false,
+                              "condition": true,
+                              "conditionGroup": ""
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentName": "Row",
+          "id": "node_ocl7ri3jfa1va",
+          "props": {
+            "wrap": true
+          },
+          "hidden": false,
+          "title": "",
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": "",
+          "children": [
+            {
+              "componentName": "Col",
+              "id": "node_ocl7ri3jfa1vb",
+              "props": {
+                "span": 24,
+                "order": 0,
+                "style": {
+                  "paddingLeft": "28px",
+                  "paddingRight": "28px",
+                  "paddingTop": "66px",
+                  "paddingBottom": "50px"
+                }
+              },
+              "hidden": false,
+              "title": "",
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "RichText",
+                  "id": "node_ocl7ri3jfa1vc",
+                  "props": {
+                    "richtext": "<p style=\"line-height: 1;\"><span style=\"font-size: 32px;\"><strong>请输入活动简介</strong></span></p>"
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                },
+                {
+                  "componentName": "Row",
+                  "id": "node_ocl7ri3jfa1vd",
+                  "props": {
+                    "align": "top",
+                    "justify": "start",
+                    "wrap": false,
+                    "style": {
+                      "marginTop": "24px"
+                    }
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": "",
+                  "children": [
+                    {
+                      "componentName": "Col",
+                      "id": "node_ocl7ri3jfa1ve",
+                      "props": {
+                        "span": 3,
+                        "order": 0,
+                        "style": {
+                          "paddingTop": "2px"
+                        }
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": "",
+                      "children": [
+                        {
+                          "componentName": "Icon",
+                          "id": "node_ocl7ri3jfa1vf",
+                          "props": {
+                            "type": "CheckCircleOutlined",
+                            "size": 20,
+                            "rotate": 0,
+                            "spin": false
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": ""
+                        }
+                      ]
+                    },
+                    {
+                      "componentName": "Col",
+                      "id": "node_ocl7ri3jfa1vg",
+                      "props": {
+                        "span": 21,
+                        "order": 0
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": "",
+                      "children": [
+                        {
+                          "componentName": "RichText",
+                          "id": "node_ocl7ri3jfa1vh",
+                          "props": {
+                            "richtext": "<p style=\"line-height: 1.5;\"><span style=\"font-size: 16px;\">展示楚活动重点能更好的引导用户注册，获取用户信息</span></p>"
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "componentName": "Row",
+                  "id": "node_ocl7ri3jfa1vi",
+                  "props": {
+                    "align": "top",
+                    "justify": "start",
+                    "wrap": false,
+                    "style": {
+                      "marginTop": "24px"
+                    }
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": "",
+                  "children": [
+                    {
+                      "componentName": "Col",
+                      "id": "node_ocl7ri3jfa1vj",
+                      "props": {
+                        "span": 3,
+                        "order": 0,
+                        "style": {
+                          "paddingTop": "2px"
+                        }
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": "",
+                      "children": [
+                        {
+                          "componentName": "Icon",
+                          "id": "node_ocl7ri3jfa1vk",
+                          "props": {
+                            "type": "CheckCircleOutlined",
+                            "size": 20,
+                            "rotate": 0,
+                            "spin": false
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": ""
+                        }
+                      ]
+                    },
+                    {
+                      "componentName": "Col",
+                      "id": "node_ocl7ri3jfa1vl",
+                      "props": {
+                        "span": 21,
+                        "order": 0
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": "",
+                      "children": [
+                        {
+                          "componentName": "RichText",
+                          "id": "node_ocl7ri3jfa1vm",
+                          "props": {
+                            "richtext": "<p style=\"line-height: 1.5;\"><span style=\"font-size: 16px;\">展示楚活动重点能更好的引导用户注册，获取用户信息</span></p>"
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "componentName": "Row",
+                  "id": "node_ocl7ri3jfa1vn",
+                  "props": {
+                    "align": "top",
+                    "justify": "start",
+                    "wrap": false,
+                    "style": {
+                      "marginTop": "24px"
+                    }
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": "",
+                  "children": [
+                    {
+                      "componentName": "Col",
+                      "id": "node_ocl7ri3jfa1vo",
+                      "props": {
+                        "span": 3,
+                        "order": 0,
+                        "style": {
+                          "paddingTop": "2px"
+                        }
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": "",
+                      "children": [
+                        {
+                          "componentName": "Icon",
+                          "id": "node_ocl7ri3jfa1vp",
+                          "props": {
+                            "type": "CheckCircleOutlined",
+                            "size": 20,
+                            "rotate": 0,
+                            "spin": false
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": ""
+                        }
+                      ]
+                    },
+                    {
+                      "componentName": "Col",
+                      "id": "node_ocl7ri3jfa1vq",
+                      "props": {
+                        "span": 21,
+                        "order": 0
+                      },
+                      "hidden": false,
+                      "title": "",
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": "",
+                      "children": [
+                        {
+                          "componentName": "RichText",
+                          "id": "node_ocl7ri3jfa1vr",
+                          "props": {
+                            "richtext": "<p style=\"line-height: 1.5;\"><span style=\"font-size: 16px;\">展示楚活动重点能更好的引导用户注册，获取用户信息</span></p>"
+                          },
+                          "hidden": false,
+                          "title": "",
+                          "isLocked": false,
+                          "condition": true,
+                          "conditionGroup": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "componentName": "Button",
+                  "id": "node_ocl7ri3jfa1vs",
+                  "props": {
+                    "type": "primary",
+                    "children": "主按钮",
+                    "text": "前往下载",
+                    "style": {
+                      "marginTop": "34px",
+                      "height": "40px",
+                      "fontSize": "15px"
+                    },
+                    "attribute": {
+                      "type": "anchorPoint",
+                      "value": "form"
+                    }
+                  },
+                  "hidden": false,
+                  "title": "",
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "componentName": "Row",
+          "id": "node_ocl6zxuldg3x",
+          "props": {
+            "wrap": true,
+            "align": "top",
+            "style": {
+              "paddingTop": "48px",
+              "paddingBottom": "60px",
+              "backgroundColor": "#31a8bf"
+            },
+            "justify": "start"
+          },
+          "title": "",
+          "hidden": false,
+          "isLocked": false,
+          "condition": true,
+          "conditionGroup": "",
+          "children": [
+            {
+              "componentName": "Col",
+              "id": "node_ocl77lnn781er",
+              "props": {
+                "span": 24,
+                "order": 0,
+                "style": {
+                  "paddingLeft": "20px",
+                  "paddingRight": "20px",
+                  "paddingBottom": "25px"
+                }
+              },
+              "title": "",
+              "hidden": false,
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "RichText",
+                  "id": "node_ocl77lnn781ep",
+                  "props": {
+                    "richtext": "<p style=\"text-align: center; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 32px;\"><strong>主讲嘉宾</strong></span></p><p style=\"text-align: center; line-height: 1;\"><br></p><p style=\"text-align: center; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 16px;\">来自各行各业的专业人士强强联手，为您带来丰富的知识盛宴展示楚活动重点能更好的引导用户注册，获取用户信息</span></p>"
+                  },
+                  "title": "",
+                  "hidden": false,
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Col",
+              "id": "node_ocl77lnn781ew",
+              "props": {
+                "span": 24,
+                "order": 0,
+                "style": {
+                  "paddingBottom": "25px"
+                }
+              },
+              "title": "",
+              "hidden": false,
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Image",
+                  "id": "node_ocl77lnn781ex",
+                  "props": {
+                    "src": "https://lookstar-beta.oss-cn-beijing.aliyuncs.com/tenant/uploads/20220819/62ff289764d1b.png",
+                    "style": {
+                      "display": "flex",
+                      "justifyContent": "center"
+                    },
+                    "width": "200",
+                    "height": "200"
+                  },
+                  "title": "",
+                  "hidden": false,
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                },
+                {
+                  "componentName": "RichText",
+                  "id": "node_ocl77lnn781f1",
+                  "props": {
+                    "richtext": "<p style=\"text-align: center; line-height: 2;\"><span style=\"color: rgb(255, 255, 255); font-size: 24px;\"><strong>尉迟琳嘉</strong></span></p><p style=\"text-align: center; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); background-color: transparent; font-size: 19px;\">营销总监</span></p><p style=\"text-align: center; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 19px;\">blue-dot</span></p>"
+                  },
+                  "title": "",
+                  "hidden": false,
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Col",
+              "id": "node_ocl7025a4if5",
+              "props": {
+                "span": 24,
+                "order": 0,
+                "style": {
+                  "paddingBottom": "25px"
+                }
+              },
+              "title": "",
+              "hidden": false,
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Image",
+                  "id": "node_ocl7025a4if6",
+                  "props": {
+                    "src": "https://lookstar-beta.oss-cn-beijing.aliyuncs.com/tenant/uploads/20220819/62ff2c9b6ad8f.png",
+                    "style": {
+                      "display": "flex",
+                      "justifyContent": "center"
+                    },
+                    "width": "200",
+                    "height": "200"
+                  },
+                  "title": "",
+                  "hidden": false,
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                },
+                {
+                  "componentName": "RichText",
+                  "id": "node_ocl77lnn781f2",
+                  "props": {
+                    "richtext": "<p style=\"text-align: center; line-height: 2;\"><span style=\"color: rgb(255, 255, 255); font-size: 24px;\"><strong>王鹏飞</strong></span></p><p style=\"text-align: center; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); background-color: transparent; font-size: 19px;\">高级营销经理</span></p><p style=\"text-align: center; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 19px;\">多媒体数字营销公司</span></p>"
+                  },
+                  "title": "",
+                  "hidden": false,
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Col",
+              "id": "node_ocl7025a4if0",
+              "props": {
+                "span": 24,
+                "order": 0,
+                "style": {
+                  "paddingBottom": "25px"
+                }
+              },
+              "title": "",
+              "hidden": false,
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Image",
+                  "id": "node_ocl7025a4if1",
+                  "props": {
+                    "src": "https://lookstar-beta.oss-cn-beijing.aliyuncs.com/tenant/uploads/20220819/62ff2ca9d37b2.png",
+                    "style": {
+                      "display": "flex",
+                      "justifyContent": "center"
+                    },
+                    "width": "200",
+                    "height": "200"
+                  },
+                  "title": "",
+                  "hidden": false,
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                },
+                {
+                  "componentName": "RichText",
+                  "id": "node_ocl77lnn781f3",
+                  "props": {
+                    "richtext": "<p style=\"text-align: center; line-height: 2;\"><span style=\"color: rgb(255, 255, 255); font-size: 24px;\"><strong>刘一菲</strong></span></p><p style=\"text-align: center; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); background-color: transparent; font-size: 19px;\">营销与品牌</span></p><p style=\"text-align: center; line-height: 1.5;\"><span style=\"color: rgb(255, 255, 255); font-size: 19px;\">CMO训练营</span></p>"
+                  },
+                  "title": "",
+                  "hidden": false,
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            },
+            {
+              "componentName": "Col",
+              "id": "node_ocl7025a4ii1",
+              "props": {
+                "span": 24,
+                "order": 0,
+                "style": {
+                  "display": "flex",
+                  "paddingBottom": "0px",
+                  "justifyContent": "center"
+                }
+              },
+              "title": "",
+              "hidden": false,
+              "isLocked": false,
+              "condition": true,
+              "conditionGroup": "",
+              "children": [
+                {
+                  "componentName": "Button",
+                  "id": "node_ocl7025a4ii0",
+                  "props": {
+                    "text": "功能按钮",
+                    "style": {
+                      "width": "160px",
+                      "display": "flex",
+                      "alignItems": "center",
+                      "marginLeft": "0px",
+                      "paddingRight": "0px",
+                      "justifyContent": "center"
+                    },
+                    "attribute": {
+                      "type": "link",
+                      "value": "https://app.lookstar.com.cn/tenant/"
+                    }
+                  },
+                  "title": "",
+                  "hidden": false,
+                  "isLocked": false,
+                  "condition": true,
+                  "conditionGroup": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "i18n": {
+    "redundancyKey": ""
+  }
+}
