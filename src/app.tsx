@@ -85,17 +85,17 @@ export async function getInitialState(): Promise<{
 
   // 初始化
   const fetchInit = async () => {
-    const dataCustomization = await fetchConfigRule();
-    const authorizer = await fetchAuthorizerRule();
-    const mailCofing = await fetchServiceRule('mail');
-    const smsCofing = await fetchServiceRule('sms');
+    // const dataCustomization = await fetchConfigRule();
+    // const authorizer = await fetchAuthorizerRule();
+    // const mailCofing = await fetchServiceRule('mail');
+    // const smsCofing = await fetchServiceRule('sms');
 
-    return {
-      dataCustomization,
-      authorizer,
-      mailCofing,
-      smsCofing,
-    };
+    // return {
+    //   dataCustomization,
+    //   authorizer,
+    //   mailCofing,
+    //   smsCofing,
+    // };
   };
 
   // 如果是登录页面，不执行

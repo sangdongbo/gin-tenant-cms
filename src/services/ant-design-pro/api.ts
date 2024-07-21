@@ -2,7 +2,7 @@ import { request } from '@umijs/max';
 
 /** 获取当前的用户 GET /api/currentUser */
 const url: string = API_URL + '/tenant/auth';
-const centralUrl: string = API_URL + '/api/admin/auth';
+const centralUrl: string = API_URL + '/tenant/auth';
 
 export async function currentUser() {
   return request(`${url}/current-user`);

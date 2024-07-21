@@ -7,6 +7,13 @@
  * https://pro.ant.design/docs/deploy
  */
 export default {
+  beta: {
+    '/api/': {
+      target: 'http://127.0.0.1:8888',
+      changeOrigin: true,
+      pathRewrite: { '^': '' }, // 保留 /api 前缀
+    }
+  },
   dev: {
     // localhost:8000/api/** -> https://preview.pro.ant.design/api/**
     '/central/': {
@@ -19,13 +26,9 @@ export default {
       pathRewrite: { '^': '' },
     },
     '/api/': {
-      // 要代理的地址
-      //   target: 'https://api.lookstar.com.cn',
       target: 'http://127.0.0.1:8888',
-      // 配置了这个可以从 http 代理到 https
-      // 依赖 origin 的功能可能需要这个，比如 cookie
       changeOrigin: true,
-      pathRewrite: { '^': '' },
+      pathRewrite: { '^': '' }, // 保留 /api 前缀
     },
     // '/tenant/': {
     //   // 要代理的地址

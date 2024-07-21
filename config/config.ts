@@ -5,6 +5,7 @@ import routes from './routes';
 import theme from './theme';
 import scripts from './scripts';
 import defaultSettings from './defaultSettings';
+import proxy from './proxy';
 
 const { REACT_APP_ENV } = process.env;
 
@@ -16,7 +17,7 @@ export default defineConfig({
   model: {},
   initialState: {},
   request: {},
-  //   proxy,
+  proxy,
   scripts,
   routes,
   theme,
@@ -57,7 +58,7 @@ export default defineConfig({
   },
   define: {
     ...define,
-    API_URL: 'https://127.0.0.1:8888',
+    API_URL: 'https://127.0.0.1:8000',
     AI_API: 'https://ai.lookstar.com.cn',
     MICROBOOK_URL: 'https://clould-app.lookstar.com.cn/microbook',
     DATA_DOWNLOAD_URL: 'https://clould-app.lookstar.com.cn/data-download',

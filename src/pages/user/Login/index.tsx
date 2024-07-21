@@ -100,9 +100,9 @@ const Login: React.FC = () => {
     try {
       const result: any = await login({ ...values, type });
       console.log(result)
-      if (result?.access_token) {
-        localStorage.setItem('lookstar-tenant-token', result.access_token);
-        localStorage.setItem('lookstar-tenant-X-Tenant', result['X-Tenant']);
+      if (result?.data?.access_token) {
+        localStorage.setItem('lookstar-tenant-token', result?.data?.access_token);
+        localStorage.setItem('lookstar-tenant-X-Tenant', '');
         message.success('登录成功！');
         const userInfo = await fetchUserInfo();
         const redirectUrl = homeRedirect(userInfo);
